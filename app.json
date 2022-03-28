@@ -8,7 +8,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#778BDD"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,9 +17,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.dev.hyuk",
+      "buildNumber": "1.0.0",
+      "infoPlist": {
+        "NSPhotoLibaryUsageDescription" : "The app accesses ..."
+      }
     },
     "android": {
+      "package": "com.dev.hyuk",
+      "versionCode": 1,
+      "permissions": ["READ_EXTERNAL_STORAGE", "WRITE_READ_EXTERNAL_STORAGE"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
