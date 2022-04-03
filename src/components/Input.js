@@ -17,7 +17,6 @@ const StyledInput = styled.TextInput.attrs(({theme}) => ({
 `
 
 const Input = ({placeholder, onChangeText, value, onSubmitEditing, onBlur}) => {
-    // const width = Dimensions.get('window').width;
     const width = useWindowDimensions().width;
     return (
         <StyledInput 
